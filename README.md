@@ -19,3 +19,12 @@ Due to coeffiencets and the fact that y-intercept is -104, the slope of the line
 However, what does this mean? What variables have the most impact on the MPG of the vehicle? Looking at the linear summary (below) we can see that according to the Pr(>|t|) column, that the vehicle's weight, spoiler angle and AWD have the most impact on MPG. All other variables are too small to have a significant impact. Since the R-value (the variable that shows how well a linear model fits the data) is at 0.71, the linear regression is somewhat useful to predict the MPG values of a car, though ideally an R-value should be at least 0.99. However, since no data is perfect, it is suggested that a R-value of at least 0.80 for reliable predictablility. 
 
 ![Linear Summary](Images/Linear_Summary.png) 
+
+### Summary Statistics on Suspension Coils
+
+First the Suspicion Coil csv was converted into a dataframe and then created two subset tables with it: Total Summary and Lot Summary. The Total Summary table is looking at PSI statistics across all lots while the Lot Summary shows statistcs of each lot (seen below). As seen, Lot 1 and 2, are very similar while Lot 3 has a smaller mean with a bigger variance and standar deviation (SD). 
+
+Total Summary
+![Total Summary](Images/Total_summary.png)
+Lot Summary
+![Lot Summary](Images/Lot_Summary.png)
