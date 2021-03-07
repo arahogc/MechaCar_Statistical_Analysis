@@ -26,5 +26,26 @@ First the Suspicion Coil csv was converted into a dataframe and then created two
 
 Total Summary
 ![Total Summary](Images/Total_summary.png)
+
 Lot Summary
 ![Lot Summary](Images/Lot_Summary.png)
+
+
+### T-Tests on the PSI Values 
+
+The P-values from single T-Test on PSI values (compared to the standard of 1500 PSI) for suspicion coils were: 
+  * All PSI= 0.06028 
+  * Lot 1 PSI= 1
+  * Lot 2 PSI= 0.6072
+  * Lot 3 PSI= 0.04168
+  
+Assuming that the significant value should be below p = 0.05 (which is standard), then only Lot 3 is significantly different. All other lots perform the same (or are not significantly different) to the standard 1500 PSI. This, combined with the lower mean of Lot 3 and high variance, could indicate that Lot 3 is under-performing. 
+
+### Summary 
+
+Based on the analysis above, the major impacts on MPG are car weight, spoiler angle, and AWD capability. This would mean for any improvement on the MPG of the MechaCar, designers and enigeers to consider these variables. In addition, when looking at suspicion coils, Lot 3 has the most variance and lower PSI average. This could mean that Lot 3 should not be used within the MechaCar. 
+
+## Study Design MechaCar vs Competetition 
+
+When it comes to comparing the MechaCar to its competition, the company should consider using an ANOVA test to compare the MechaCar in various categories that customers would care about: cost, city and highway fuel efficiency, horse power, safety rating, maintenance cost. ANOVA test is able to test to see if the means from multiple different samples are significantly similar or different. This means that the averages of different cars in these categories can be compared to the average of MecaCar. If the p value is greater than 0.05, then MecaCar has the same or similar performance within these categories (the null hypothesis). If the p value is less than 0.05, then MecaCar is significantly different in those categories. If it is significant different, then looking at the average of the MecaCar is the next step. If MecaCar's average is either below or above the other averages would show how it is performing against its competitors (below = worse, above = better).   
+
